@@ -14,12 +14,12 @@
 #
 class nfs::client::params {
 
-	### Application related parameters
+  ### Application related parameters
 
-	$package_name = $::operatingsystem ? {
-		default => 'nfs-common'
-	}
+  $package_name = $::operatingsystem ? {
+    default => 'nfs-common'
+  }
 
-	$enabled = true
+  $enabled = true
 
 }
